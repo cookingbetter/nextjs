@@ -23,7 +23,7 @@ let strDate = prompt("Введите дату рождения в формате
 let date1 = new Date(strDate + "T00:00");
 document.getElementById("days").value = diffDays(date1, new Date());
 
-setCookie('user', parseInt(diffDays(date1, new Date())));
+setCookie('remaining', parseInt(diffDays(date1, new Date())));
 
 function setCookie(name, value) {
 
