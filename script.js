@@ -1,12 +1,9 @@
-let elements = document.forms[1].elements;
+document.cookie = 'name=Вася';
+alert(document.cookie); //выведет 'name=Вася'
 
-for (let i = 0; i < elements.length; i++) {
+document.cookie = 'age=25';
+alert(document.cookie); //выведет 'name=Вася; age=25'
 
-elements[i] = '!';
-
-}
-
-elements[0].value='!';
 
 
 
